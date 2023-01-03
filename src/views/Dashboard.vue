@@ -120,10 +120,16 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 #activity_panel {
 	::v-deep .item-icon {
 		filter: var(--background-invert-if-dark);
+	}
+	::v-deep .item__details {
+		flex-shrink:1;
+		h3 {
+			max-width:100%;
+		}
 	}
 }
 </style>
